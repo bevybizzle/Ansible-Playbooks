@@ -18,3 +18,4 @@ ansible-playbook --connection=local --ask-become-pass install-all-apps.yml
 Then the playbooks will go ahead and install.
 
 Use this as a template to create your own playbooks for software you constantly install. I use this for distro hopping between linux distributions and trying different debian/ubuntu based distros.
+
