@@ -1,0 +1,10 @@
+# Run this playbook with this command: ansible-playbook --connection=local --ask-become-pass developer-apps.yml
+
+---
+- name: Install Developer Apps
+  hosts: localhost
+  tasks:
+    - name: Install VS Code
+      ansible.builtin.apt:
+        name: code
+      become: yes

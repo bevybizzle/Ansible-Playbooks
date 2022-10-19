@@ -1,0 +1,9 @@
+# Run this playbook with this command: ansible-playbook --connection=local --ask-become-pass install-all-apps.yml
+
+---
+- name: Install All Playbook Apps
+  hosts: localhost
+- import_playbook: gaming-apps.yml
+- import_playbook: developer-apps.yml
+- import_playbook: media-apps.yml
+- import_playbook: minecraft-install.yml

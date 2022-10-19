@@ -1,0 +1,14 @@
+# Run this playbook with this command: ansible-playbook --connection=local --ask-become-pass gaming-apps.yml
+
+---
+- name: Install Gaming Software
+  hosts: localhost
+  tasks:
+    - name: Install Discord
+      ansible.builtin.apt:
+        name: discord
+      become: yes
+    - name: Install Steam
+      ansible.builtin.apt:
+        name: steam
+      become: yes

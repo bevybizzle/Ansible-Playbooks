@@ -1,0 +1,18 @@
+# Run this playbook with this command: ansible-playbook --connection=local --ask-become-pass media-apps.yml
+
+---
+- name: Install Media Apps
+  hosts: localhost
+  tasks:
+    - name: Install VLC
+      ansible.builtin.apt:
+        name: vlc
+      become: yes
+    - name: Install Audacity
+      ansible.builtin.apt:
+        name: audacity
+      become: yes
+    - name: Install OBS Studio
+      ansible.builtin.apt:
+        name: obs-studio
+      become: yes
