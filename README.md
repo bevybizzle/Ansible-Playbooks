@@ -4,6 +4,8 @@
 When I distro-hop I tend to keep installing the same programs. This takes time. Creating Ansible Playbooks to do this for me should save me some time.
 
 ## Pre-requisites
+
+**YOU MUST DO THE FOLLOWING BEFORE RUNNING THE PLAYBOOKS**
 First if you don't already have it, you will need to install ansible.
 Ansible can be installed on debian/ubuntu based distros by running: 
 ```
