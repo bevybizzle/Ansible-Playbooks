@@ -10,6 +10,11 @@ Ansible can be installed on debian/ubuntu based distros by running:
 sudo apt-get install ansible -y
 ```
 
+You will also need to run the following if you want to manage cargo packages:
+```
+ansible-galaxy collection install community.general
+```
+
 ## How To Use
 Within the same folder as the playbooks if you run:
 ```
