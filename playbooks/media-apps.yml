@@ -15,4 +15,8 @@
     - name: Install OBS Studio
       ansible.builtin.apt:
         name: obs-studio
+    - name: Install Spotify Studio
+      ansible.builtin.apt:
+        name: spotify-client
+
       become: yes

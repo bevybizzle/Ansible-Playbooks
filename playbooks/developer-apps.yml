@@ -8,3 +8,8 @@
       ansible.builtin.apt:
         name: code
       become: yes
+
+    - name: Install Neovim
+      ansible.builtin.apt:
+        name: neovim
+      become: yes
