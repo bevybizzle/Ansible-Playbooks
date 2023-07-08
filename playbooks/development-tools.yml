@@ -1,0 +1,25 @@
+# Run this playbook with this command: ansible-playbook --connection=local --ask-become-pass development-tools.yml
+
+---
+- name: Install Development Tools such as language frameworks and debuggers.
+  hosts: localhost
+  tasks:
+    - name: Install tools
+      ansible.builtin.apt:
+        pkg:
+        - gdb
+        - cargo
+        - gir1.2-gmenu-3.0
+        - gnome-tweaks
+        - unzip
+        - dconf-cli
+        - cmake
+        - freeglut3-dev
+        - libxrandr-dev
+        - python3-pip
+        - libgl1-mesa-dev
+        - libegl1-mesa-dev
+        - dconf-cli
+        - cargo
+      become: yes
+
