@@ -1,4 +1,4 @@
-# Run this playbook with this command: ansible-playbook --connection=local --ask-become-pass gaming-apps.yml
+# Run this playbook with this command: ansible-playbook --connection=localhost --ask-become-pass gaming-apps.yml
 
 ---
 - name: Install Gaming Software

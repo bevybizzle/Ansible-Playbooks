@@ -20,7 +20,7 @@ ansible-galaxy collection install community.general
 ## How To Use
 Within the same folder as the playbooks if you run:
 ```
-ansible-playbook --connection=local --ask-become-pass install-all-apps.yml
+ansible-playbook --connection=localhost --ask-become-pass install-all-apps.yml
 ```
 Then the playbooks will go ahead and install.
 

@@ -1,4 +1,4 @@
-# Run this playbook with this command: ansible-playbook --connection=local --ask-become-pass install-all-apps.yml
+# Run this playbook with this command: ansible-playbook --connection=localhosthost --ask-become-pass install-all-apps.yml
 
 ---
 - name: Install All Playbook Apps

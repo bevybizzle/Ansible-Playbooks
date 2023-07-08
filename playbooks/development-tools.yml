@@ -1,4 +1,4 @@
-# Run this playbook with this command: ansible-playbook --connection=local --ask-become-pass development-tools.yml
+# Run this playbook with this command: ansible-playbook --connection=localhost --ask-become-pass development-tools.yml
 
 ---
 - name: Install Development Tools such as language frameworks and debuggers.

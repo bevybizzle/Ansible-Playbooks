@@ -1,4 +1,4 @@
-# Run this playbook with this command: ansible-playbook --connection=local --ask-become-pass media-apps.yml
+# Run this playbook with this command: ansible-playbook --connection=localhost --ask-become-pass media-apps.yml
 
 ---
 - name: Install Media Apps

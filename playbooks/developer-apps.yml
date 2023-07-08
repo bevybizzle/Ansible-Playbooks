@@ -1,4 +1,4 @@
-# Run this playbook with this command: ansible-playbook --connection=local --ask-become-pass developer-apps.yml
+# Run this playbook with this command: ansible-playbook --connection=localhost --ask-become-pass developer-apps.yml
 
 ---
 - name: Install Developer Apps
