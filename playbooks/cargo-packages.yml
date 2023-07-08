@@ -1,0 +1,13 @@
+# Run this playbook with this command: ansible-playbook --connection=local --ask-become-pass cargo-packages.yml
+
+---
+- name: Install Developer Apps
+  hosts: localhost
+  tasks:
+  - name: Install Tauri GUI framework for rust
+    community.general.cargo:
+      name: create-tauri-app
+
+  - name:  Install Tauri cli commands
+    community.general.cargo:
+      name: tauri-cli
