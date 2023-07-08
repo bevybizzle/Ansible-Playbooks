@@ -1,4 +1,4 @@
-# Run this playbook with this command: ansible-playbook --connection=local --ask-become-pass minecraft-install.yml
+# Run this playbook with this command: ansible-playbook --connection=localhost --ask-become-pass minecraft-install.yml
 # Ya can't have a PC with no minecraft, that's sacrilege! XD
 ---
 - name: Install Minecraft

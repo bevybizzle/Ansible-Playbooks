@@ -1,9 +1,11 @@
-# Run this playbook with this command: ansible-playbook --connection=local --ask-become-pass install-all-apps.yml
+# Run this playbook with this command: ansible-playbook --connection=localhosthost --ask-become-pass install-all-apps.yml
 
 ---
 - name: Install All Playbook Apps
   hosts: localhost
+- import_playbook: development-tools.yml
 - import_playbook: gaming-apps.yml
 - import_playbook: developer-apps.yml
 - import_playbook: media-apps.yml
 - import_playbook: minecraft-install.yml
+- import_playbook: cargo-packages.yml # This always should be called after the development-tools.yml has been run because we need rust and cargo installed.
