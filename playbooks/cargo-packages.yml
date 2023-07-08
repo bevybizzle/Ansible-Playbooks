@@ -4,10 +4,10 @@
 - name: Install Developer Apps
   hosts: localhost
   tasks:
-  - name: Install Tauri GUI framework for rust
-    community.general.cargo:
-      name: create-tauri-app
+    - name: Install Tauri GUI framework for rust
+      community.general.cargo:
+        name: create-tauri-app
 
-  - name:  Install Tauri cli commands
-    community.general.cargo:
-      name: tauri-cli
+    - name:  Install Tauri cli commands
+      community.general.cargo:
+        name: tauri-cli
