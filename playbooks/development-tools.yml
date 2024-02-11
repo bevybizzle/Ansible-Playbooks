@@ -29,4 +29,5 @@
         - librsvg2-dev
         - dconf-cli
         - cargo
+        - texlive-full
       become: yes
