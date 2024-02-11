@@ -30,4 +30,5 @@
         - dconf-cli
         - cargo
         - texlive-full
+        - libncurses-dev
       become: yes
