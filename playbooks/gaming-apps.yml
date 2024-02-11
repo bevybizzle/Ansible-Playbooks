@@ -5,10 +5,13 @@
   hosts: localhost
   tasks:
     - name: Install Discord
-      ansible.builtin.apt:
-        name: discord
+      apt:
+        deb: https://discord.com/api/download?platform=linux&format=deb
       become: yes
     - name: Install Steam
-      ansible.builtin.apt:
-        name: steam
+      apt:
+        deb: https://cdn.cloudflare.steamstatic.com/client/installer/steam.deb
       become: yes
+
+
+      

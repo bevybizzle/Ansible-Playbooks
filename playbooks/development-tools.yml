@@ -8,7 +8,6 @@
       ansible.builtin.apt:
         pkg:
         - gdb
-        - cargo
         - gir1.2-gmenu-3.0
         - gnome-tweaks
         - unzip
@@ -25,9 +24,11 @@
         - wget
         - file
         - libssl-dev
-        - libgtk-3-dev
+        - libgtk-4-dev
         - libayatana-appindicator3-dev
         - librsvg2-dev
         - dconf-cli
         - cargo
+        - texlive-full
+        - libncurses-dev
       become: yes
